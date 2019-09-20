@@ -1,7 +1,7 @@
 import math
 
 
-def making_readable(s):
+def compiled(s):
     definitions = {'exp': 'math.exp',
                    'sqrt': 'math.sqrt',
                    'sin': 'math.sin',

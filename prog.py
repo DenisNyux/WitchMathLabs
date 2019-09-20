@@ -1,3 +1,4 @@
+import math
 import formulas
 
 
@@ -40,7 +41,7 @@ while cond_main != main_menu['3) Выход']:
         cond_const = 0
         while cond_const != menu_constant['5) Выход']:
             cond_const = cond_checker(menu_constant)
-            if cond_const != 5:
+            if (cond_const > 0) & (cond_const < 5):
                 arguments = entering_const()
             if cond_const == 1:
                 print('Результат вычисления: ', formulas.rectangle_left(arguments))

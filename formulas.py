@@ -1,9 +1,8 @@
 import math
-import enter
 
 
-print('Введите интеграл: ')
-s = input()
+def func(x):
+    return x ** 3
 
 
 def rectangle_right(args: list) -> float:
@@ -11,7 +10,7 @@ def rectangle_right(args: list) -> float:
     i = args[0]+h
     res = 0
     while i <= args[1]:
-        res += h * enter.integral(i)
+        res += h * func(i)
         i += h
     return res
 
@@ -53,7 +52,7 @@ def parabola(args: list) -> float:
     res = h / 3 * (func(args[0]) + func(args[1]) + 4 * odd + 2 * even)
     return res
 
-
+"""
 def double_recount(args_var):
     h1 = math.sqrt(args_var[2])
     res = 0
@@ -76,4 +75,4 @@ def double_recount(args_var):
         h1, h2 = h2, h1
         res = res1-res2
     return res
-
+"""
