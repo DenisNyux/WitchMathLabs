@@ -61,4 +61,3 @@ while cond_main != main_menu['3) Выход']:
         pass
     else:
         print('Ошибка, введите другое значение')
-
