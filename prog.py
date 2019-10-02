@@ -8,22 +8,22 @@ def entering_const():
     необходимых при вычислении интеграла методами
     с постоянным шагом"""
     print('Введите границы интегрирования и шаг:\na = ', end='')
-    a = int(input())
+    a = float(input())
     print('b = ', end='')
-    b = int(input())
+    b = float(input())
     print('n = ', end='')
-    n = int(input())
+    n = float(input())
     res = [a, b, n]
     return res
 
 
 def entering_var():
     print('Введите границы интегрирования и точность:\na = ', end='')
-    a = int(input())
+    a = float(input())
     print('b = ', end='')
-    b = int(input())
+    b = float(input())
     print('ε = ', end='')
-    e = int(input())
+    e = float(input())
     res = [a, b, e]
     return res
 
@@ -58,25 +58,35 @@ while cond_main != main_menu['3) Выход']:
             if (cond_const > 0) & (cond_const < 5):
                 arguments = entering_const()
             if cond_const == 1:
-                print('Результат вычисления: ', formulas.rectangle_left(arguments), ' Остаточный член:',
-                      rcounting.r_rectangle(arguments))
+                print('\nРезультат вычисления: ', formulas.rectangle_left(arguments), ' Остаточный член:',
+                      rcounting.r_rectangle(arguments), '\n')
             elif cond_const == 2:
-                print('Результат вычисления: ', formulas.rectangle_right(arguments), ' Остаточный член:',
-                      rcounting.r_rectangle(arguments))
+                print('\nРезультат вычисления: ', formulas.rectangle_right(arguments), ' Остаточный член:',
+                      rcounting.r_rectangle(arguments), '\n')
             elif cond_const == 3:
-                print('Результат вычисления: ', formulas.trapeze(arguments), ' Остаточный член:',
-                      rcounting.r_trapeze(arguments))
+                print('\nРезультат вычисления: ', formulas.trapeze(arguments), ' Остаточный член:',
+                      rcounting.r_trapeze(arguments), '\n')
             elif cond_const == 4:
-                print('Результат вычисления: ', formulas.parabola(arguments), ' Остаточный член:',
-                      rcounting.r_parabola(arguments))
+                print('\nРезультат вычисления: ', formulas.parabola(arguments), ' Остаточный член:',
+                      rcounting.r_parabola(arguments), '\n')
             elif cond_const == 5:
                 pass
             else:
                 print('Ошибка, введите другое значение')
     elif cond_main == main_menu['2) Методы с переменным шагом']:
-        cond_var = cond_checker(menu_var)
-        if (cond_var > 0) & (cond_var < 5):
-            arguments = entering_var()
+        cond_var = 0
+        while cond_var != menu_var['3) Выход']:
+            cond_var = cond_checker(menu_var)
+            if (cond_var > 0) & (cond_var < 3):
+                arguments = entering_var()
+            if cond_var == 1:
+                print('\nРезультат вычисления: ', formulas.double_recount(arguments), '\n')
+            elif cond_var == 2:
+                print('\nРезультат вычисления: ', formulas.second_algorithm(arguments), '\n')
+            elif cond_var == 3:
+                pass
+            else:
+                pass
     elif cond_main == main_menu['3) Выход']:
         pass
     else:

@@ -57,6 +57,39 @@ def parabola(args: list) -> float:
     return res
 
 
+def n_from_h(args):
+    """Вспомогательная функция для получения n из h.
+    Необходима для более удобного подсчета интеграла.
+    Аргументы: a, b, h"""
+    return (args[1] - args[0])/args[2]
+
+
 def double_recount(args_var):
-    pass
     """args_var - это a, b и точность"""
+    h = args_var[2]
+    a = args_var[0]
+    b = args_var[1]
+    res1 = trapeze([a, b, n_from_h([a, b, h])])
+    res2 = trapeze([a, b, n_from_h([a, b, h/2])])
+    while abs(res2-res1) > args_var[2]:
+        h /= 2
+        res1 = trapeze([a, b, n_from_h([a, b, h])])
+        res2 = trapeze([a, b, n_from_h([a, b, h])])
+    return res2
+
+
+def second_algorithm(args_var):
+    h_v = args_var[2]
+    h_s = h_v/2
+    a = args_var[0]
+    b = args_var[1]
+    res1 = rectangle_right([a, b, n_from_h([a, b, h_v])])
+    res2 = 0
+    while abs(res2 - res1) > args_var[2]:
+        res1 = rectangle_right([a, b, n_from_h([a, b, h_v])])
+        a += h_s
+        h_d = h_v/2
+        res2 = rectangle_right([a, b, n_from_h([a, b, h_d])])
+        h_v /= 2
+        h_s /= 2
+    return res2
