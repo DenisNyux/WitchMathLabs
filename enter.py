@@ -1,7 +1,9 @@
 import math
 
+s = input()
 
-def compiled(s):
+
+def compiled(s, x):
     definitions = {'exp': 'math.exp',
                    'sqrt': 'math.sqrt',
                    'sin': 'math.sin',
@@ -11,3 +13,5 @@ def compiled(s):
         s = s.replace(i, k)
     return eval(s)
 
+
+print(compiled(s, 25))

@@ -2,7 +2,7 @@ import math
 
 
 def func(x):
-    return x ** 3
+    return 3 * x**4 - x**3 + 2 * x**2 + 5
 
 
 def rectangle_right(args: list) -> float:
@@ -52,27 +52,8 @@ def parabola(args: list) -> float:
     res = h / 3 * (func(args[0]) + func(args[1]) + 4 * odd + 2 * even)
     return res
 
+
 """
 def double_recount(args_var):
-    h1 = math.sqrt(args_var[2])
-    res = 0
-    while abs(res):
-        h2 = h1 / 2
-        res1 = 0
-        res2 = 0
-        tmp1 = args_var[0] + h1
-        while tmp1 <= args_var[1] - h1:
-            res1 += func(tmp1)
-            tmp1 += h1
-        res1 += (func(args_var[0]) + func(args_var[1])) / 2
-        res1 *= h1
-        tmp2 = args_var[0] + h2
-        while tmp2 <= args_var[1] - h2:
-            res2 += func(tmp2)
-            tmp2 += h2
-        res2 += (func(args_var[0]) + func(args_var[1])) / 2
-        res2 *= h2
-        h1, h2 = h2, h1
-        res = res1-res2
-    return res
+    
 """

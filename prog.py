@@ -1,5 +1,6 @@
 import math
 import formulas
+import rcounting
 
 
 def entering_const():
@@ -24,7 +25,7 @@ main_menu = {'1) Методы с постоянным шагом': 1,
              '2) Методы с переменным шагом': 2,
              '3) Выход': 3}
 menu_constant = {'1) Метод правых частей прямоугольников': 1,
-                 '2) Метод левых частей прямоугольников':2,
+                 '2) Метод левых частей прямоугольников': 2,
                  '3) Метод трапеций': 3,
                  '4) Метод парабол': 4,
                  '5) Выход': 5}
@@ -36,7 +37,6 @@ menu_var = {'1) Метод по первому алгоритму': 1,
 cond_main = 0
 while cond_main != main_menu['3) Выход']:
     cond_main = cond_checker(main_menu)
-
     if cond_main == main_menu['1) Методы с постоянным шагом']:
         cond_const = 0
         while cond_const != menu_constant['5) Выход']:
@@ -44,13 +44,17 @@ while cond_main != main_menu['3) Выход']:
             if (cond_const > 0) & (cond_const < 5):
                 arguments = entering_const()
             if cond_const == 1:
-                print('Результат вычисления: ', formulas.rectangle_left(arguments))
+                print('Результат вычисления: ', formulas.rectangle_left(arguments), ' Остаточный член:',
+                      rcounting.r_rectangle(arguments))
             elif cond_const == 2:
-                print('Результат вычисления: ', formulas.rectangle_right(arguments))
+                print('Результат вычисления: ', formulas.rectangle_right(arguments), ' Остаточный член:',
+                      rcounting.r_rectangle(arguments))
             elif cond_const == 3:
-                print('Результат вычисления: ', formulas.trapeze(arguments))
+                print('Результат вычисления: ', formulas.trapeze(arguments), ' Остаточный член:',
+                      rcounting.r_trapeze(arguments))
             elif cond_const == 4:
-                print('Результат вычисления: ', formulas.parabola(arguments))
+                print('Результат вычисления: ', formulas.parabola(arguments), ' Остаточный член:',
+                      rcounting.r_parabola(arguments))
             elif cond_const == 5:
                 pass
             else:
