@@ -6,6 +6,7 @@ def func(x):
 
 
 def rectangle_right(args: list) -> float:
+    """args - это a, b  и количество разбиений"""
     h = (args[1]-args[0])/args[2]
     i = args[0]+h
     res = 0
@@ -16,6 +17,7 @@ def rectangle_right(args: list) -> float:
 
 
 def rectangle_left(args: list) -> float:
+    """args - это a, b  и количество разбиений"""
     h = (args[1]-args[0])/args[2]
     i = args[0]
     res = 0
@@ -26,6 +28,7 @@ def rectangle_left(args: list) -> float:
 
 
 def trapeze(args: list) -> float:
+    """args - это a, b  и количество разбиений"""
     h = (args[1]-args[0])/args[2]
     i = args[0] + h
     res = 0
@@ -38,6 +41,7 @@ def trapeze(args: list) -> float:
 
 
 def parabola(args: list) -> float:
+    """args - это a, b  и количество разбиений"""
     h = (args[1] - args[0]) / args[2]
     i = args[0] + h
     odd = 0
@@ -53,7 +57,6 @@ def parabola(args: list) -> float:
     return res
 
 
-"""
 def double_recount(args_var):
-    
-"""
+    pass
+    """args_var - это a, b и точность"""

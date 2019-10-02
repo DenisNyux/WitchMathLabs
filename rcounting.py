@@ -15,7 +15,7 @@ def max_diff(args, func):
     res = []
     while args[1] >= i:
         res.append(func(i))
-        i += 0.01
+        i += 0.001
     return abs(max(res))
 
 

@@ -4,6 +4,9 @@ import rcounting
 
 
 def entering_const():
+    """Функция для форматированного ввода параметров,
+    необходимых при вычислении интеграла методами
+    с постоянным шагом"""
     print('Введите границы интегрирования и шаг:\na = ', end='')
     a = int(input())
     print('b = ', end='')
@@ -11,6 +14,17 @@ def entering_const():
     print('n = ', end='')
     n = int(input())
     res = [a, b, n]
+    return res
+
+
+def entering_var():
+    print('Введите границы интегрирования и точность:\na = ', end='')
+    a = int(input())
+    print('b = ', end='')
+    b = int(input())
+    print('ε = ', end='')
+    e = int(input())
+    res = [a, b, e]
     return res
 
 
@@ -61,6 +75,8 @@ while cond_main != main_menu['3) Выход']:
                 print('Ошибка, введите другое значение')
     elif cond_main == main_menu['2) Методы с переменным шагом']:
         cond_var = cond_checker(menu_var)
+        if (cond_var > 0) & (cond_var < 5):
+            arguments = entering_var()
     elif cond_main == main_menu['3) Выход']:
         pass
     else:
