@@ -1,3 +1,7 @@
+"""
+В модуле содержатся функции для подсчета интегралов
+"""
+
 import math
 
 
@@ -6,7 +10,8 @@ def func(x):
 
 
 def rectangle_right(args: list) -> float:
-    """args - это a, b  и количество разбиений"""
+    """Интегралы методом правых частей прямоугольника.
+    Args - это a, b  и количество разбиений"""
     h = (args[1]-args[0])/args[2]
     i = args[0]+h
     res = 0
@@ -87,7 +92,7 @@ def second_algorithm(args_var):
     res2 = 0
     while abs(res2 - res1) > args_var[2]:
         res1 = rectangle_right([a, b, n_from_h([a, b, h_v])])
-        a += h_s
+        h_v += h_s
         h_d = h_v/2
         res2 = rectangle_right([a, b, n_from_h([a, b, h_d])])
         h_v /= 2
