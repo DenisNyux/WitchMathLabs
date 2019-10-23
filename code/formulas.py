@@ -6,7 +6,7 @@ import math
 
 
 def func(x):
-    return 3 * x**4 - x**3 + 2 * x**2 + 5
+    return math.cos(x)
 
 
 def rectangle_right(args: list) -> float:

@@ -2,6 +2,7 @@ from integral_table import *
 from entering import *
 from double_integral import *
 
+
 def cond_checker(menu: dict) -> int:
     """
     На вход поступает меню в виде словаря.
@@ -18,6 +19,7 @@ def main():
     cond_main = 0
     while cond_main != main_menu['5) Выход']:
         cond_main = cond_checker(main_menu)
+        arguments = list()
         if cond_main == main_menu['1) Методы с постоянным шагом']:
             cond_const = 0
             while cond_const != menu_constant['5) Выход']:
@@ -55,8 +57,8 @@ def main():
                 else:
                     pass
         elif cond_main == main_menu['3) Таблица']:
-            args = input_table()
-            print('\n', table(args), '\n')
+            arguments = input_table()
+            print('\n', table(arguments), '\n')
         elif cond_main == main_menu['4) Двойной интеграл']:
             args = input_double()
             print('\nРезультат вычисления:', rectangular_double(args), '\n')

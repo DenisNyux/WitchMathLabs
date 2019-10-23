@@ -5,15 +5,15 @@ import math
 
 
 def diff(x):
-    return x * (12 * x**2 - 3 * x + 4)
+    return -1 * math.sin(x)
 
 
 def second_diff(x):
-    return 36 * x**2 - 6 * x + 4
+    return -1 * math.cos(x)
 
 
 def fourth_diff(x):
-    return 72
+    return math.cos(x)
 
 
 def max_diff(args, func):

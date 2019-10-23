@@ -8,9 +8,9 @@ def table(args):
     Выводит таблицу с результатом подсчета интеграла всеми методами.
     """
     left_parts = [str(round(rectangle_left([args[0], args[1], args[2]]), 5)) + ', R = ' + str(round(r_rectangle(
-        [args[0], args[1], args[2]]), 5))]
+        [args[0], args[1], args[2]]), 8))]
     right_parts = [str(round(rectangle_right([args[0], args[1], args[2]]), 5)) + ', R = ' + str(round(r_rectangle(
-        [args[0], args[1], args[2]]), 5))]
+        [args[0], args[1], args[2]]), 8))]
     trap = [str(round(trapeze([args[0], args[1], args[2]]), 5)) +
             ', R = ' + str(round(r_trapeze([args[0], args[1], args[2]]), 8))]
     par = [str(round(parabola([args[0], args[1], args[2]]), 5)) +
