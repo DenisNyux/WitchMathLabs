@@ -3,6 +3,11 @@ from methods import *
 
 
 def cond_checker(menu: list):
+    """
+    На вход поступает меню в виде списка.
+    Функция выводит меню и возвращает введенное
+    пользователем значение.
+    """
     for each in menu:
         print(each)
     condition = int(input())
@@ -26,9 +31,9 @@ def main():
                 else:
                     print('Вы ввели неправильное значение')
         if main_cond == 1:
-            pass
+            high(1, 1.5, 0.1, 0.77, -0.44)
         if main_cond == 2:
-            pass
+            systemUr(1, 1.5, 0.1, 2, 1, 1)
         if main_cond == 3:
             pass
     
