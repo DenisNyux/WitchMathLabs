@@ -49,7 +49,7 @@ def main():
     print('x = {}\nexp(x) ='.format(x), homemade_exp(x))
     print('ln(x+1) =', homemade_ln_plus_1(x, 0.00001))
     print('\ny = {}\narctg(y) ='.format(x), homemade_arctg(y, 0.00001))
-    print('sin(y) =', homemade_sin(y))
+    # print('sin(y) =', homemade_sin(y))
 
 
 main()

@@ -26,7 +26,7 @@ def bisection():
     x_prev = a
     x_curr = b
     if abs(x_curr) == abs(x_prev):
-        x_curr += 5
+        x_curr += a/2
     x = (x_prev + x_curr) / 2
     while abs(func(x)) > acc:
         x = (x_prev + x_curr) / 2
@@ -41,7 +41,7 @@ def chord():
     x_prev = a
     x_curr = b
     if abs(x_prev) == abs(x_curr):
-        x_curr += 5
+        x_curr += a/2
     while abs(x_curr - x_prev) >= acc:
         x = x_curr - ((x_curr - x_prev) * func(x_curr)) / (func(x_curr) - func(x_prev))
         x_prev = x_curr

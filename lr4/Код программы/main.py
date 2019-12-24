@@ -1,4 +1,3 @@
-# x0 = 0, y0 = 1, a - b = 0-1
 from methods import *
 
 

@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b3fecd3-9022-40d5-818e-8805cd909385" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../lr3/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lr3/task.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/methods.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lr2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lr2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lr3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lr3/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lr3/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../lr3/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lr3/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../lr3/Код программы/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lr3/task.py" beforeDir="false" afterPath="$PROJECT_DIR$/../lr3/Код программы/task.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Код программы/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/methods.py" beforeDir="false" afterPath="$PROJECT_DIR$/Код программы/methods.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,16 +22,16 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/main.py">
+        <entry file="file://$PROJECT_DIR$/Код программы/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+            <state relative-caret-position="480">
+              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/methods.py">
+        <entry file="file://$PROJECT_DIR$/Код программы/methods.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-168">
               <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
@@ -63,9 +60,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="126" />
     <option name="y" value="27" />
-    <option name="width" value="675" />
-    <option name="height" value="715" />
+    <option name="width" value="920" />
+    <option name="height" value="717" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -74,17 +72,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="lr4" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lr4" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -171,22 +159,22 @@
       <workItem from="1575523676351" duration="662000" />
       <workItem from="1577144235853" duration="509000" />
       <workItem from="1577200919953" duration="8026000" />
-      <workItem from="1577213275384" duration="861000" />
+      <workItem from="1577213275384" duration="1265000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10058000" />
+    <option name="totallyTimeSpent" value="10462000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="27" width="1368" height="718" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26136363" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26136363" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32881355" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32881355" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -208,17 +196,17 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/methods.py">
+    <entry file="file://$PROJECT_DIR$/Код программы/methods.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-168">
           <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
+    <entry file="file://$PROJECT_DIR$/Код программы/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+        <state relative-caret-position="480">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
         </state>
       </provider>
     </entry>
